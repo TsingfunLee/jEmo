@@ -6,16 +6,16 @@
     'use strict';
 
     $.jEmo = function (options) {
-        this.target = $.jEmo.defaults.target;
+        this.button = $.jEmo.defaults.container;
         this._init(options);
-    }
+    };
 
     // the options
     $.jEmo.defaults = {
         container: document.getElementById('jEmo-emo'),
         target: document.getElementById('jEmo-textarea'),
         position: 'down',
-        emotions:emotions.json
+        emotions: 'emotions.json'
     };
 
     $.jEmo.prototype = {
@@ -30,10 +30,11 @@
                     doc = document,
                     container = doc.createElement('ul');
                 target.appendChild(container);
-
+                var html = '<li class="jEmo-happy"></li>' +
+                    '<li class="jEmo-smile">e9e1</li>';
+                container.write(html);
             });
-        }
-    }
-
+        },
+    };
 
 })(jQuery, window);
