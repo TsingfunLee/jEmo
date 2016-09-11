@@ -1,14 +1,75 @@
 @font-face {
     font-family: 'emotion';
-    src:  url('../fonts/emotion.eot?g7q0bu');
-    src:  url('../fonts/emotion.eot?g7q0bu#iefix') format('embedded-opentype'),
-    url('../fonts/emotion.ttf?g7q0bu') format('truetype'),
-    url('../fonts/emotion.woff?g7q0bu') format('woff'),
-    url('../fonts/emotion.svg?g7q0bu#emotion') format('svg');
+    src: url('../fonts/emotion.eot');
+    src: url('../fonts/emotion.eot') format('embedded-opentype'),
+    url('../fonts/emotion.ttf') format('truetype'),
+    url('../fonts/emotion.woff') format('woff'),
+    url('../fonts/emotion.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-.jEmo-happy::before{
-    content: "e9df";
+[id^='jEmo-'], [id*='jEmo-'] {
+    font-family: 'emotion';
+    font-size: 1.5rem;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.jEmo-happy:before {
+    content: "\e9df";
+}
+.jEmo-smile:before {
+    content: "\e9e1";
+}
+.jEmo-tongue:before {
+    content: "\e9e3";
+}
+.jEmo-sad:before {
+    content: "\e9e5";
+}
+.jEmo-wink:before {
+    content: "\e9e7";
+}
+.jEmo-grin:before {
+    content: "\e9e9";
+}
+.jEmo-cool:before {
+    content: "\e9eb";
+}
+.jEmo-angry:before {
+    content: "\e9ed";
+}
+.jEmo-evil:before {
+    content: "\e9ef";
+}
+.jEmo-shocked:before {
+    content: "\e9f1";
+}
+.jEmo-baffled:before {
+    content: "\e9f3";
+}
+.jEmo-confused:before {
+    content: "\e9f5";
+}
+.jEmo-neutral:before {
+    content: "\e9f7";
+}
+.jEmo-hipster:before {
+    content: "\e9f9";
+}
+.jEmo-wondering:before {
+    content: "\e9fb";
+}
+.jEmo-sleepy:before {
+    content: "\e9fd";
+}
+.jEmo-frustrated:before {
+    content: "\e9ff";
+}
+.jEmo-crying:before {
+    content: "\ea01";
 }
